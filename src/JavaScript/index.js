@@ -31,7 +31,7 @@ const stars = document.getElementById("stars");
 window.addEventListener("scroll", () => {
   const value = window.scrollY;
 
-  dubaiText.style.translate = `${value * -1}px`;
-  burjKhalifa.style.translate = `0 ${value < 800 ? value : 800}px`;
-  stars.style.translate = `0 ${value < 800 ? value : 800}px`;
+  dubaiText.style.translate = `${value * -0.7}px`;
+  burjKhalifa.style.translate = `0 ${value < 800 ? value / 1.3 : 800}px`;
+  stars.style.translate = `0 ${value < 800 ? value / 1.3 : 800}px`;
 });
