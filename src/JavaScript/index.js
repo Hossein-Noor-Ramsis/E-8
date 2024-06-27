@@ -21,7 +21,7 @@ content.addEventListener("click", () => {
   navList.classList.add("hidden");
   openMenu.classList.remove("hidden");
   closeMenu.classList.add("hidden");
-})
+});
 
 // Parallax
 const dubaiText = document.getElementById("dubai-text");
@@ -29,9 +29,9 @@ const burjKhalifa = document.getElementById("burj-khalifa");
 const stars = document.getElementById("stars");
 
 window.addEventListener("scroll", () => {
-  let value = window.scrollY;
+  const value = window.scrollY;
 
   dubaiText.style.translate = `${value * -1}px`;
-  burjKhalifa.style.translate = `0 ${value}px`;
-  stars.style.translate = `0 ${value}px`;
+  burjKhalifa.style.translate = `0 ${value < 800 ? value : 800}px`;
+  stars.style.translate = `0 ${value < 800 ? value : 800}px`;
 });
