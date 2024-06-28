@@ -582,6 +582,30 @@ video {
   top: 4rem;
 }
 
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.-left-1\/2 {
+  left: -50%;
+}
+
+.-left-3 {
+  left: -0.75rem;
+}
+
+.-left-3\/4 {
+  left: -75%;
+}
+
+.-left-full {
+  left: -100%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -605,6 +629,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .flex-col {
@@ -653,6 +681,10 @@ video {
   background-color: rgb(255 79 80 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -665,6 +697,16 @@ video {
 
 .to-\[\#0075c7\] {
   --tw-gradient-to: #0075c7 var(--tw-gradient-to-position);
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-1 {
@@ -759,6 +801,11 @@ body {
 
 #parallax {
   height: calc(100vh - 68px);
+}
+
+#parallax img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hover\:bg-\[\#ff4f50\]:hover {
